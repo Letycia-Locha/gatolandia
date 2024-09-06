@@ -1,0 +1,110 @@
+/* Importa a fonte Chakra Petch do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+body {
+    font-family: 'Times New Roman', Times, serif; /* Define a fonte padrão */
+    background-color: #421b1b; /* Cor de fundo da página */
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    height: 100vh; /* Preenche a altura total da viewport */
+    margin: 0; /* Remover margens padrão */
+    padding: 0; /* Remover espaçamento */
+    overflow: hidden; /* Impede rolagem */
+    min-width: 100vw; /* Largura mínima */
+    min-height: 100vh; /* Altura mínima igual à altura da tela */
+    color: #421b1b;
+    text-align: center;
+}
+
+header {
+    padding: 20px; /* Espaçamento interno do cabeçalho */
+    text-align: center; /* Centraliza o texto do cabeçalho */
+    position: sticky; /* Fixa o cabeçalho no topo ao rolar */
+    top: 0; /* Fixa no topo da página */
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+}
+
+h1 {
+    margin: 0; /* Remove a margem padrão do título */
+    font-size: 2.5rem; /* Tamanho da fonte */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Define a fonte do título */
+    color: antiquewhite; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    letter-spacing: 5px; /* Distância entre letras */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao texto */
+    text-align: center;
+}
+
+.search-container {
+    display:flex;
+    align-items: flex-end;
+    text-align: center; /* Centraliza o conteúdo */
+    margin: 20px 0; /* Espaçamento acima e abaixo */
+}
+
+.search-container label .img {
+    width: 100px; /* Ajuste a largura do ícone */
+    height: 100px; /* Ajuste a altura do ícone */
+    margin-right: 5px; /* Espaçamento entre o ícone e o select */
+}
+
+#raca-select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 5px solid #421b1b;
+    margin-right: 10px; /* Espaçamento entre o select e o botão */
+}
+
+#buscar-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #421b1b; /* Cor do botão */
+    color: antiquewhite ; /* Cor do texto do botão */
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    padding: 20px;
+    background-color: #f4f4f4; /* Fundo da página */
+    margin-top: 50px; /* Espaçamento superior para o conteúdo */
+}
+
+.descricao-container {
+    width: 60%; /* Largura do quadrado */
+    max-width: 800px;
+    height: 400px; /* Altura do quadrado */
+    background-color: #f5f5dc; /* Cor bege claro */
+    border-radius: 20px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra leve */
+    padding: 20px;
+    overflow-x: auto; /* Scroll lateral */
+    overflow-y: auto; /* Scroll vertical */
+    margin: 0 auto; /* Centraliza o quadrado na página */
+    word-wrap: break-word; /* Quebra de linha para evitar overflow de texto */
+}
+
+footer {
+    background-color: #421b1b;
+    padding: 20px;
+    width: 100%; /* Ajusta a largura do footer */
+    box-shadow: 0 2px 5px none;
+    display: flex; /* Usado para alinhar a imagem e o texto */
+    align-items: center; /* Centraliza verticalmente */
+    position: fixed; /* Fixa o footer no fim da página */
+    bottom: 0; /* Posiciona no final da página */
+    font-size: 1rem; /* Tamanho da fonte */
+    color: #f4f4f4;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+footer img {
+    max-width: 45px; /* Ajusta a largura máxima da imagem para 30px */
+    margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+};
